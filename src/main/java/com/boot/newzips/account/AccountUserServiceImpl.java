@@ -97,6 +97,12 @@ public class AccountUserServiceImpl implements AccountUserService {
 
 	}
 
+	@Override
+	public boolean checkPassword(Map<String, Object> params) throws Exception {
+		int count = accountUserMapper.checkPassword(params);
+		return count > 0;
+	}
+
 
 
 

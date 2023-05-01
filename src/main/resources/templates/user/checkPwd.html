@@ -1,0 +1,52 @@
+<!doctype html>
+<html layout:decorate="~{user/layout_user}">
+
+<meta charset="utf-8">
+
+<div layout:fragment="content">
+	<!-- 별도로 적용하는 css파일있으면 link해주기 -->
+	<link rel="stylesheet" href="/assets/css/login.css">
+	
+
+	<!-- header, footer 제외 html쓰기 -->
+ 	<!-- 여기다가 -->
+ 
+ <section class="pager-sec bfr">
+            <div class="container">
+                <div class="pager-sec-details">
+                    <h3>마이페이지</h3>
+                    <ul>
+                    </ul>
+                </div><!--pager-sec-details end-->
+            </div>
+        </section>
+
+		<section class="blog-standard section-padding">
+		
+			<div style="margin-top: 7%;"></div>
+		
+           <form action="/checkPwd" method="POST">
+			  <div style="border: 1px solid #808080a3; width: 25%; height: 80%; text-align: center; font-size: 20px; margin-left: 40%; border-radius: 5px;">
+			    <h3 style="margin-top: 10px;">[[${userId}]]님 안녕하세요</h3>
+			    <h3>비밀번호 확인이 있겠습니다</h3><br/>
+			    <h3>비밀번호 : <input type="password" name="userPwd2"> </h3><br/>
+			    <button type="submit" style="width: 16%; color: #ffff; background-color: #6a7be7; border-color: #6a7be7; border-radius: 9px; margin-bottom: 20px;">입력</button><br/>
+			  </div>
+			</form>
+            
+            <div style="margin-bottom: 7%;"></div>
+            
+        </section><!--blog-single-sec end-->
+ 
+ 
+</div><!--layout fragment end-->
+
+
+<script type="text/javascript">
+	//별도로 사용하는 스크립트 있으면 여기다 쓰기
+	
+
+</script>
+
+
+</html>

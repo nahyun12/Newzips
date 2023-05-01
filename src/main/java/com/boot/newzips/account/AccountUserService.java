@@ -22,5 +22,9 @@ public interface AccountUserService {
 	public String findId(Map<String, Object> params) throws Exception;
 	
 	public boolean checkId(String userId) throws Exception;
+	
+	public boolean checkPassword(Map<String, Object> params) throws Exception;
+	
+	
 
 }
